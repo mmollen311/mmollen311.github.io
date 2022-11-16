@@ -1,3 +1,4 @@
+
 <h1>Welcome to lunas very real and not fake and real for sure on god and on satan and also for real Games!!!!!!!!!!</h1>
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <div id="player" style="display: none"></div>
@@ -17,7 +18,7 @@
     player = new YT.Player('player', {
       height: '390',
       width: '640',
-      videoId: 'M7lc1UVf-VE',
+      videoId: 'dQw4w9WgXcQ',
       playerVars: {
         'playsinline': 1
       },
@@ -26,12 +27,21 @@
         'onStateChange': onPlayerStateChange
       }
     });
-  }
-var button = Document.getElementById("click")
+  };
+ 
+var button = document.getElementById("click")
   // 4. The API will call this function when the video player is ready.
   function onPlayerReady(event) {
-    button.addEventListener("click" () => {event.target.playVideo(); Document.getElementById("player").style.display = "block"})
+   event.target.playVideo(); document.getElementById("click").addEventListener("click",
+    function() {document.getElementById("player").style.display = "block"; player.playVideo();})
   }
+  var done = false;
+      function onPlayerStateChange(event) {
+        console.log("s")
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
 </script>
 <a id="click">Aquapark io Water Slides
 <br>ATV Quad Racing
