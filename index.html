@@ -32,7 +32,9 @@
 var button = document.getElementById("click")
   // 4. The API will call this function when the video player is ready.
   function onPlayerReady(event) {document.getElementById("click").addEventListener("click",
-    function() {document.getElementById("player").style.display = "block"; player.playVideo(); window.onbeforeunload = "Are you sure you want to leave?";})
+    function() {document.getElementById("player").style.display = "block"; player.playVideo(); window.onbeforeunload = function(e) {
+  return "STAY HERE FOREVER AND BASKE IN YOUR OWN FOOLISHNESS";
+};})
   }
   var done = false;
       function onPlayerStateChange(event) {
